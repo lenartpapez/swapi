@@ -1,6 +1,6 @@
 # swapi
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple Vue app for browsing the Star Wars API. You can select one of three categories for which you can fetch paginated data. You can add entities to your list of favorites and it will persist across sessions. A simple search is also supported.
 
 ## Recommended IDE Setup
 
