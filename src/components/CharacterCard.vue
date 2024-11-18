@@ -36,7 +36,7 @@ const { favorites } = storeToRefs(store)
       <div>Height: {{ character.height }}cm</div>
       <div>Mass: {{ character.mass }}kg</div>
       <button
-        class="h-10 self-end px-4 bg-neutral-900 text-white dark:bg-neutral-800 dark:text-white rounded-md shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ring-offset-2 ring-offset-white dark:ring-offset-neutral-800"
+        class="h-10 self-end px-4 bg-neutral-100 text-neutral-900 dark:bg-neutral-950 hover:bg-neutral-50 dark:hover:bg-neutral-900 dark:text-white rounded-md shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ring-offset-2 ring-offset-white dark:ring-offset-neutral-800"
         @click="$emit('close')"
       >
         Close

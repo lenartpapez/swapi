@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CharacterCard from '@/components/CharacterCard.vue'
 import IconButton from '@/components/IconButton.vue'
+import Input from '@/components/Input.vue'
 import Pagination from '@/components/Pagination.vue'
 import PlanetCard from '@/components/PlanetCard.vue'
 import StarshipCard from '@/components/StarshipCard.vue'
@@ -135,13 +136,7 @@ watch([search], () => {
           <h2 class="font-bold">Filters</h2>
           <div class="space-y-1">
             <label class="text-sm text-neutral-900/50 dark:text-white/50" for="search">Name</label>
-            <input
-              id="search"
-              type="text"
-              v-model="search"
-              placeholder="Search"
-              class="text-sm w-full h-12 px-4 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ring-offset-2 ring-offset-gray-100 dark:ring-offset-neutral-800"
-            />
+            <Input placeholder="Search" v-model="search" />
           </div>
         </div>
       </div>
